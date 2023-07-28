@@ -1,20 +1,20 @@
 import React from 'react';
-import styles from './SocialMedia.module.css'
+import styles from './socialMedia.module.scss';
+import {TwitterIcon, FacebookIcon, LinkedinIcon, RedditIcon, EmailIcon} from '../SocialMediaIcons/socialMediaIcons';
 
 const SocialMedia = () => {
   return (
     <div className={styles.socialMedia}>
-      <p>60 minute read</p>
+     <div className={styles.readingTime}>60 minute read</div>
       <div className={styles.socialMediaIcons}>
-        <componentOne/>
-        <componentTwo/>
-        <componentThree/>
-        <componentFour/>
-        <componentFive/>
-        <componentSix/>
+        <TwitterIcon />
+        <FacebookIcon/>
+        <RedditIcon/>
+        <LinkedinIcon/>
+        <EmailIcon/>
       </div>
     </div>
   )
 }
 
-export default SocialMedia
+export default SocialMedia;
